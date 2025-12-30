@@ -9,7 +9,7 @@ Just download the provided python file and run.
 ## Usage
 
 ```
-python3 substitution.py
+python3 path/to/file
 ```
 
 ## Contributing
