@@ -1,7 +1,7 @@
 import os
 
 # Startup process
-os.system("clear")
+os.system("cls" if os.name =="nt" else "clear")
 print(r"""
                       /$$$$$$                  /$$          
                      /$$__  $$                | $$          
@@ -16,7 +16,7 @@ print("Copyright (c) 2025 Rowan Elley — Licensed under the MIT License")
 print()
 print("Enter Ciphertext:")
 ciphertext = input()
-os.system("clear")
+os.system("cls" if os.name =="nt" else "clear")
 
 # Parse ciphertext
 ciphertext = ciphertext.upper()
@@ -45,7 +45,7 @@ def applyMappings(plaintext, mappings):
         # apply this mapping result for the next pass
         plaintext = temporaryPlaintext
 
-    os.system("clear")
+    os.system("cls" if os.name =="nt" else "clear")
     print(plaintext)
     print()
     for target, change in mappings.items():
